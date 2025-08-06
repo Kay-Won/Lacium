@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 async function Sidebar() {
   const authUser = await currentUser();
   if (!authUser) return <UnAuthenticatedSidebar />;
-  return <div>Sidebar</div>
+  return <div></div>
 }
 export default Sidebar;
 
