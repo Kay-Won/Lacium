@@ -39,19 +39,27 @@ async function Sidebar() {
 
             <div className="w-full">
               <Separator className="my-4" />
-              <div className="flex justify-between">
-                <div>
+
+              <div className="flex items-center justify-center text-center">
+                <div className="w-36 px-3">
+                  <p className="font-medium">{user._count.posts}</p>
+                  <p className="text-xs text-muted-foreground">Posts</p>
+                </div>
+
+                <div className="w-36 px-4">
                   <p className="font-medium">{user._count.following}</p>
                   <p className="text-xs text-muted-foreground">Following</p>
                 </div>
-                <Separator orientation="vertical" />
-                <div>
+
+                <div className="w-36 px-4">
                   <p className="font-medium">{user._count.followers}</p>
                   <p className="text-xs text-muted-foreground">Followers</p>
                 </div>
               </div>
+
               <Separator className="my-4" />
             </div>
+
 
             <div className="w-full space-y-2 text-sm">
               <div className="flex items-center text-muted-foreground">
